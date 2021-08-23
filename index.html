@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Designined by GoldSnaker -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Admin Dashboard  </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bx-station'></i>
+      <span class="logo_name">IoT Monitoring</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-broadcast' ></i>
+            <span class="links_name">Temperature Sensors</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-broadcast' ></i>
+            <span class="links_name">Vibration Sensors</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Data Base</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">Report</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <i class='bx bxs-user-circle' ></i>
+        <span class="admin_name">Roger Chung</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+            <!-- las primeras 4 cajas -->
+        <div class="overview-boxes">
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">MOTOR</div>
+                    <p class="tag">TAG "MT-1"</p>
+                    <img src="https://static.weg.net/medias/images/h8c/h6e/MKT_WEN_IMAGE_MGF_IC611_B3L_1200Wx1200H.jpg" alt="" width="250" height="250">
+                </div>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">	STATOR WINDING RTD</div>
+                    <p class="tag">TAG "T-1"</p>
+                    <div id="chart_div_1" style="width: 250px; height: 250px;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">	BEARING RTD</div>
+                    <p class="tag">TAG "T-4"</p>
+                    <div id="chart_div_2" style="width: 250px; height: 250px;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">HOT AIR RTD</div>
+                    <p class="tag">TAG "T-6"</p>
+                    <div id="chart_div_3" style="width: 250px; height: 250px;"></div>
+                </div>
+            </div>
+        </div>
+            <!-- las 2 cajas de abajo -->
+      <div class="sales-boxes">
+        <div class="recent-sales">
+            <div class="title">TEMPERATURE VS TIME</div>
+            <div class="chart">
+                <div id="chart_div_4" style="width: 500px; height: 350px;"></div>
+            </div>
+        </div>
+        <div class="top-sales">
+          <div class="title">TRIP AND ALARMS</div>
+          <div id="table_div"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
+
